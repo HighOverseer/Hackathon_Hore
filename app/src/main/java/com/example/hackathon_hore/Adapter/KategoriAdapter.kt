@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.hackathon_hore.MainActivity
 import com.example.hackathon_hore.Model.Kategori
 import com.example.hackathon_hore.databinding.ItemKategoriBinding
 
@@ -24,6 +25,12 @@ class KategoriAdapter(var categories:ArrayList<Kategori>):RecyclerView.Adapter<K
                 .load(currentItem.imageId)
                 .into(ivItemKategori)
             tvItemKategori.text = currentItem.nama
+        }
+        holder.itemView.setOnClickListener {
+            if(holder.itemView.context is MainActivity){
+                (holder.itemView.context as MainActivity).onItemCategoriesGetClicked()
+            }
+
         }
     }
 

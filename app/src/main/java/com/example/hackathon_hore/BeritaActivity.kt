@@ -16,7 +16,6 @@ import com.example.hackathon_hore.databinding.ActivityBeritaBinding
 
 class BeritaActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityBeritaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

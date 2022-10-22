@@ -6,37 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.kontak.KontakFragment">
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/headerkotakemas"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
-
-        <ImageButton
-            android:background="#DAA21B"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20sp"
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_arrow_left" />
-
-        <TextView
-            android:textStyle="bold"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="16dp"
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppinsregular"
-            android:text="Kontak"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-    </FrameLayout>
-
     <TextView
         android:id="@+id/tv_wa"
         android:layout_width="wrap_content"

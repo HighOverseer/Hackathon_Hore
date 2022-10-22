@@ -26,6 +26,9 @@ class ListTokoAdapter (var categories:ArrayList<ListToko>): RecyclerView.Adapter
                 .into(ivItemToko)
             tvNamaToko.text = currentItem.nama
         }
+        holder.itemView.setOnClickListener {
+
+        }
     }
 
     override fun getItemCount(): Int {

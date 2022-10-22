@@ -1,5 +1,6 @@
 package com.example.hackathon_hore
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -13,6 +14,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import com.denzcoskun.imageslider.models.SlideModel
+import com.example.hackathon_hore.Constant.hasilPencarian
 import com.example.hackathon_hore.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -48,5 +50,10 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun onItemCategoriesGetClicked(){
+        val intent = Intent(this, CategoriesClickedActivity::class.java)
+        startActivity(intent)
     }
 }
