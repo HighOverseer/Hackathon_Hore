@@ -3,6 +3,7 @@ package com.example.hackathon_hore
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -23,6 +24,15 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        val btnLoginH = findViewById<Button>(R.id.btnLoginH)
+
+        btnLoginH.setOnClickListener {
+            Intent(this@MainActivity, LoginActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
