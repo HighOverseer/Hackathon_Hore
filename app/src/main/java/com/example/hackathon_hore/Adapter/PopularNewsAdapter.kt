@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.hackathon_hore.BeritaActivity
 import com.example.hackathon_hore.Model.PopularNews
 import com.example.hackathon_hore.R
 import com.example.hackathon_hore.databinding.ItemKategoriBinding
@@ -27,6 +28,9 @@ class PopularNewsAdapter(var popularNewsItems:ArrayList<PopularNews>):RecyclerVi
                 .load(currentItem.imageId)
                 .into(ivPopularNews)
             tvTitlePopularNews.text = currentItem.title
+        }
+        holder.itemView.setOnClickListener {
+            (holder.itemView.context as BeritaActivity).itemClicked(currentItem)
         }
     }
 }

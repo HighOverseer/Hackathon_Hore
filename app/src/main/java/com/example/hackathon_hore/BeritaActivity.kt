@@ -1,5 +1,6 @@
 package com.example.hackathon_hore
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hackathon_hore.Adapter.PopularNewsAdapter
 import com.example.hackathon_hore.Constant.popularnews
+import com.example.hackathon_hore.Model.PopularNews
 import com.example.hackathon_hore.databinding.ActivityBeritaBinding
 
 class BeritaActivity : AppCompatActivity() {
@@ -37,5 +39,10 @@ class BeritaActivity : AppCompatActivity() {
             rvRecentlyUpdate.setHasFixedSize(true)
         }
 
+    }
+    fun itemClicked(berita:PopularNews){
+        val intent = Intent(this, DetailBerita::class.java)
+        intent.putExtra(DetailBerita.EXTRA_BERITA, berita)
+        startActivity(intent)
     }
 }
