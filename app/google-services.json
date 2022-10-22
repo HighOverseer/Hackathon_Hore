@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020592517172",
+    "project_id": "horehorehackathon",
+    "storage_bucket": "horehorehackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020592517172:android:cba90c03655723d77d9a61",
+        "android_client_info": {
+          "package_name": "com.example.hackathon_hore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020592517172-6anl8pgqvvlbfat98snrh99v6oi4usck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD23eGTOzSMO-vC3XLWKS-sQTNcEsT53ZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020592517172-6anl8pgqvvlbfat98snrh99v6oi4usck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
