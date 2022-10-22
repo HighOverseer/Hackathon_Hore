@@ -23,7 +23,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/iv_gambarGula"
                 android:layout_width="346dp"
                 android:layout_height="203dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +35,7 @@
 
             <TextView
 
-                android:id="@+id/textView"
+                android:id="@+id/tv_judulProdukToko"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -46,7 +46,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                app:layout_constraintTop_toBottomOf="@+id/iv_gambarGula" />
 
             <ImageView
                 android:id="@+id/imageView9"
@@ -56,11 +56,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.045"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/tv_judulProdukToko"
                 app:srcCompat="@drawable/ic_map_pin" />
 
             <TextView
-                android:id="@+id/textView23"
+                android:id="@+id/tv_lokasi"
                 android:layout_width="241dp"
                 android:layout_height="42dp"
                 android:layout_marginStart="4dp"
@@ -69,7 +69,7 @@
                 android:textColor="#000000"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView9"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_judulProdukToko" />
 
             <ImageView
                 android:id="@+id/imageView10"
@@ -82,7 +82,7 @@
                 app:srcCompat="@drawable/ic_grid" />
 
             <TextView
-                android:id="@+id/textView24"
+                android:id="@+id/tv_nama_pangan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -92,7 +92,7 @@
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView10"
-                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_lokasi" />
 
             <TextView
                 android:id="@+id/textView25"
@@ -114,11 +114,11 @@
                 android:text="Kandungan"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView28"
-                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+                app:layout_constraintStart_toStartOf="@+id/tv_deskripsi"
+                app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi" />
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/tv_harga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -130,7 +130,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/textView28"
+                android:id="@+id/tv_deskripsi"
                 android:layout_width="328dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="4dp"
@@ -191,8 +191,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/imageView8"
+            <ImageButton
+                android:background="#DAA21B"
+                android:id="@+id/ib_backDetailToko"
                 android:layout_width="58dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="16dp"
@@ -203,7 +204,7 @@
                 app:srcCompat="@drawable/ic_arrow_left" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/tv_namaToko"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -211,8 +212,8 @@
                 android:text="Toko1"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintBottom_toBottomOf="@+id/ib_backDetailToko"
+                app:layout_constraintStart_toEndOf="@+id/ib_backDetailToko"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
