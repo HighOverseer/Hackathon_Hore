@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_kontak"
+        android:name="com.example.hackathon_hore.ui.kontak.KontakFragment"
+        android:label="Kontak"
+        tools:layout="@layout/fragment_kontak" />
+
+    <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.hackathon_hore.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/headerkotakemas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20dp"
+            android:background="#DAA21B"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Tentang"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_paragraf1"
+        android:layout_width="336dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="40dp"
+        android:justificationMode="inter_word"
+        android:text="Berita Pangan atau yang disingkat Berangan adalah aplikasi yang dapat menghilangkan rasa khawatir masyarakat akan penipuan harga pangan dari setiap daerah"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/tv_paragraf2"
+        android:layout_width="335dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="4dp"
+        android:justificationMode="inter_word"
+        android:text="Aplikasi ini memiliki 3 kegunaan utama yaitu : Memberikan informasi harga pangan dari seluruh provinsi di Indonesia, memberikan berita yang berkaitan dengan pangan di Indonesia dan mewadahi untuk kemitraan toko pangan dengan Berangan"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paragraf1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
