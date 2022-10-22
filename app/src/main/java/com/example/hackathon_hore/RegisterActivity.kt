@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.auth.User
 import android.app.Activity
+import com.example.hackathon_hore.ui.home.HomeFragment
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -91,5 +92,15 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if(auth.currentUser != null){
+            Intent(this@RegisterActivity, HomeFragment::class.java).also {
+                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(it)
+            }
+        }
     }
 }
