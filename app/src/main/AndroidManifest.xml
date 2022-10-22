@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.hackathon_hore">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,6 +18,15 @@
         <activity
             android:name=".ResetPasswordActivity"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BeritaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_berita"
+            android:theme="@style/Theme.Hackathon_Hore.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
