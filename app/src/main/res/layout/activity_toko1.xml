@@ -28,9 +28,11 @@
                 android:layout_height="203dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.038"
+                app:layout_constraintVertical_bias="0.037"
+                android:scaleType="fitXY"
                 app:srcCompat="@drawable/toko1" />
 
             <TextView
@@ -192,25 +194,25 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:background="#DAA21B"
                 android:id="@+id/ib_backDetailToko"
-                android:layout_width="58dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.045"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_btn"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_arrow_left" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_namaToko"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="22dp"
                 android:text="Toko1"
                 android:textColor="#FFFFFF"
+                android:fontFamily="@font/poppinsregular"
+                android:textStyle="bold"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/ib_backDetailToko"
                 app:layout_constraintStart_toEndOf="@+id/ib_backDetailToko"

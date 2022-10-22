@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.hackathon_hore.ListTokoActivity
 import com.example.hackathon_hore.Model.Kategori
 import com.example.hackathon_hore.Model.ListToko
 import com.example.hackathon_hore.databinding.ItemKategoriBinding
@@ -27,7 +28,7 @@ class ListTokoAdapter (var categories:ArrayList<ListToko>): RecyclerView.Adapter
             tvNamaToko.text = currentItem.nama
         }
         holder.itemView.setOnClickListener {
-
+            (holder.itemView.context as ListTokoActivity).onItemClicked(currentItem.nama)
         }
     }
 

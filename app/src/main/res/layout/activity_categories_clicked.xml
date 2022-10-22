@@ -39,5 +39,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:visibility="visible"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="22dp"
+            android:text="Harga Pangan Dari Berbagai \nProvinsi"
+            android:textColor="#FFFFFF"
+            android:lines="2"
+            android:fontFamily="@font/poppinsregular"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_backCategoriesClicked"
+            app:layout_constraintStart_toEndOf="@+id/btn_backCategoriesClicked"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

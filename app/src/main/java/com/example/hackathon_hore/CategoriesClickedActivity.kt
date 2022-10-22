@@ -35,8 +35,9 @@ class CategoriesClickedActivity : AppCompatActivity() {
         binding.rvKategoriGetClicked.layoutManager = GridLayoutManager(this@CategoriesClickedActivity, 2, GridLayoutManager.VERTICAL, false)
         binding.rvKategoriGetClicked.setHasFixedSize(true)
     }
-    fun onItemGetClicked(){
+    fun onItemGetClicked(item:HasilPencarian){
         intent = Intent(this, ListTokoActivity::class.java)
+        intent.putExtra(ListTokoActivity.EXTRA_INFO, item)
         startActivity(intent)
     }
 

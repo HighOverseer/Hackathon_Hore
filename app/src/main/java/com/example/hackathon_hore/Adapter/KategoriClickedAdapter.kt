@@ -32,7 +32,7 @@ class KategoriClickedAdapter(val items:ArrayList<HasilPencarian>):RecyclerView.A
         }
         holder.itemView.setOnClickListener {
             if(holder.itemView.context is CategoriesClickedActivity){
-                (holder.itemView.context as CategoriesClickedActivity).onItemGetClicked()
+                (holder.itemView.context as CategoriesClickedActivity).onItemGetClicked(currentItem)
             }
 
         }

@@ -36,6 +36,8 @@
                 android:textSize="24sp"
                 android:layout_height="wrap_content"
                 android:text="List Toko"
+                android:fontFamily="@font/poppinsregular"
+                android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="20dp"/>
