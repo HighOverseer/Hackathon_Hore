@@ -35,17 +35,15 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val imageList = ArrayList<SlideModel>()
-        imageList.add(SlideModel("https://img.freepik.com/free-photo/beautiful-scenery-phragmites-plants-by-sea-with-swimming-pelican-sunset_181624-37787.jpg"))
-        imageList.add(SlideModel("https://cdn1-digiphoto.techbang.com/system/excerpt_images/9937/front/76a1e304510a404caffe302b7397fc4d.jpg?1555479694"))
+        imageList.add(SlideModel("https://p4.wallpaperbetter.com/wallpaper/382/296/41/nature-food-wallpaper-preview.jpg"))
+        imageList.add(SlideModel("https://ricola-cdn-ep.azureedge.net/cmsstorage/ricola/media/content/-common/need-states/refreshment/garlic/garlic_headervisual.jpg"))
+        imageList.add(SlideModel("https://asset.kompas.com/crops/rKfTweJn9-rLF87y5F2T9HXRQQs=/84x0:928x563/750x500/data/photo/2020/07/28/5f1f9b3689654.jpg"))
         binding.imageSlider.setImageList(imageList, ScaleTypes.FIT)
 
         val adapter = KategoriAdapter(kategori.getCategories())
         binding.rvKategori.adapter = adapter
         binding.rvKategori.layoutManager = GridLayoutManager(requireContext(), 2, GridLayoutManager.HORIZONTAL, false)
         binding.rvKategori.setHasFixedSize(true)
-
-
-
 
     }
     override fun onDestroyView() {
