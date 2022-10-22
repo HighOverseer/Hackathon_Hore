@@ -12,6 +12,10 @@ object listToko {
             ListToko(R.drawable.fototoko, "Toko Hore"),
             ListToko(R.drawable.fototoko, "Toko Limau Manis"),
             ListToko(R.drawable.fototoko, "Toko Terbaik"),
+            ListToko(R.drawable.fototoko, "Toko Pak Lumin"),
+            ListToko(R.drawable.fototoko, "Toko By Pass"),
+            ListToko(R.drawable.fototoko, "Toko Bisa bisa"),
+            ListToko(R.drawable.fototoko, "Toko Bang Bagus")
 
             )
         return categories
