@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
+import com.denzcoskun.imageslider.models.SlideModel
 import com.example.hackathon_hore.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
