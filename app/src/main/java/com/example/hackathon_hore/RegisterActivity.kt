@@ -24,15 +24,11 @@ class RegisterActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         val btnRegister = findViewById<Button>(R.id.btnRegister)
         val etemail = findViewById<TextView>(R.id.etEmailReg)
-        val etnama_toko = findViewById<TextView>(R.id.etNamaTokoReg)
-        val etno_hp = findViewById<TextView>(R.id.etNoHpReg)
         val etpassword1 = findViewById<TextView>(R.id.etPassword1Reg)
         val etpassword2 = findViewById<TextView>(R.id.etPassword2Reg)
 
         btnRegister.setOnClickListener {
             val email = etemail.text.toString().trim()
-            val nama_toko = etnama_toko.text.toString().trim()
-            val no_hp = etno_hp.text.toString().trim()
             val pass1 = etpassword1.text.toString().trim()
             val pass2 = etpassword2.text.toString().trim()
 
@@ -46,18 +42,6 @@ class RegisterActivity : AppCompatActivity() {
                 etemail.error = "Email tidak ada"
                 etemail.requestFocus()
                 return@setOnClickListener
-
-            if (nama_toko.isEmpty()){
-                etnama_toko.error = "Mohon masukkan nama toko"
-                etnama_toko.requestFocus()
-                return@setOnClickListener
-            }
-
-            if (no_hp.isEmpty()){
-                etno_hp.error = "Mohon masukkan no. hp"
-                etno_hp.requestFocus()
-                return@setOnClickListener
-            }
 
             if (pass1.isEmpty() || pass1.length < 8){
                 etpassword1.error = "Mohon masukkan password min 8 karakter"

@@ -17,13 +17,17 @@ import androidx.appcompat.content.res.AppCompatResources
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.hackathon_hore.Constant.hasilPencarian
 import com.example.hackathon_hore.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var auth : FirebaseAuth
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        auth = FirebaseAuth.getInstance()
 
         val btnLoginH = findViewById<Button>(R.id.btnLoginH)
 
