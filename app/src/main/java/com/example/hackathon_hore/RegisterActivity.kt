@@ -38,10 +38,11 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches())
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 etemail.error = "Email tidak ada"
                 etemail.requestFocus()
                 return@setOnClickListener
+            }
 
             if (pass1.isEmpty() || pass1.length < 8){
                 etpassword1.error = "Mohon masukkan password min 8 karakter"
@@ -55,7 +56,7 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if(!pass1.equals(pass2))
+            if(!pass2.equals(pass1))
                 etpassword2.error = "Password tidak sama"
                 etpassword2.requestFocus()
                 return@setOnClickListener

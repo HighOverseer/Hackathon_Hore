@@ -37,10 +37,11 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches())
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 etEmailLog.error = "Email tidak ada"
                 etEmailLog.requestFocus()
                 return@setOnClickListener
+            }
 
             if (pass1.isEmpty() || pass1.length < 8){
                 etPasswordLog.error = "Mohon masukkan password min 8 karakter"
