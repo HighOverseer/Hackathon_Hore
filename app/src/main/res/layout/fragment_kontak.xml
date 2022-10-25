@@ -5,83 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.kontak.KontakFragment">
-
+    <FrameLayout
+        android:id="@+id/flfragment"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:background="@drawable/header_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
     <TextView
         android:id="@+id/tv_wa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="72dp"
-        android:text="WA : 6282288052021"
+
+        android:text="Untuk Mengirim Feedback dapat melalui :\nEmail : horehoreteam@gmail.com\nInstagram : @hore_horeTeam"
         android:textColor="#000000"
-        android:textSize="19sp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/poppinsregular"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
-    <TextView
-        android:id="@+id/tv_ig"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Instagram : @hore_horeTeam"
-        android:textColor="#000000"
-        android:textSize="19sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_wa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_wa" />
-
-    <TextView
-        android:id="@+id/tv_twitter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Twitter : @horehoreteamtwit"
-        android:textColor="#000000"
-        android:textSize="19sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_line"
-        app:layout_constraintTop_toBottomOf="@+id/tv_line" />
-
-    <TextView
-        android:id="@+id/tv_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Email : horehoreteam@gmail.com"
-        android:textColor="#000000"
-        android:textSize="19sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_ig"
-        app:layout_constraintTop_toBottomOf="@+id/tv_ig" />
-
-    <TextView
-        android:id="@+id/tv_FB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Facebook : horehoreteamfb"
-        android:textColor="#000000"
-        android:textSize="19sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_twitter"
-        app:layout_constraintTop_toBottomOf="@+id/tv_twitter" />
-
-    <TextView
-        android:id="@+id/tv_line"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Line : horehoreteamline"
-        android:textColor="#000000"
-        android:textSize="19sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_telegram"
-        app:layout_constraintTop_toBottomOf="@+id/tv_telegram" />
-
-    <TextView
-        android:id="@+id/tv_telegram"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Telegram : Horee"
-        android:textColor="#000000"
-        android:textSize="19sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_email"
-        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

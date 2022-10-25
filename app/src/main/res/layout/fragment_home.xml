@@ -42,5 +42,31 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/imageSlider"
         android:layout_marginTop="32dp"/>
+    <TextView
+        android:id="@+id/tv_terbaru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rv_kategori"
+        android:text="Terbaru"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:lineSpacingExtra="-4sp"
+        android:letterSpacing="0.06"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"
+        android:textStyle="bold"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_terbaru"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="28dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_terbaru"
+        android:layout_marginTop="24dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

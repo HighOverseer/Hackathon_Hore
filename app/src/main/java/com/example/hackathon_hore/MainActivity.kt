@@ -3,6 +3,7 @@ package com.example.hackathon_hore
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -14,8 +15,15 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import com.denzcoskun.imageslider.models.SlideModel
+import com.example.hackathon_hore.Api.ApiConfig
 import com.example.hackathon_hore.Constant.hasilPencarian
+import com.example.hackathon_hore.Constant.kategori
+import com.example.hackathon_hore.Model.HasilPencarian
+import com.example.hackathon_hore.Model.Kategori
+import com.example.hackathon_hore.Model.Response
 import com.example.hackathon_hore.databinding.ActivityMainBinding
+import retrofit2.Call
+import javax.security.auth.callback.Callback
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         setSupportActionBar(binding.appBarMain.toolbar)
         binding.appBarMain.toolbar.navigationIcon = AppCompatResources.getDrawable(this, R.drawable.hamburger)
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -54,6 +61,11 @@ class MainActivity : AppCompatActivity() {
 
     fun onItemCategoriesGetClicked(){
         val intent = Intent(this, CategoriesClickedActivity::class.java)
+        startActivity(intent)
+    }
+    fun onItemGetClicked(item: HasilPencarian){
+        intent = Intent(this, ListTokoActivity::class.java)
+        intent.putExtra(ListTokoActivity.EXTRA_INFO, item)
         startActivity(intent)
     }
 }

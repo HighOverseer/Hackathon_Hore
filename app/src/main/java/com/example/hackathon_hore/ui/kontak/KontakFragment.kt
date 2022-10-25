@@ -27,25 +27,6 @@ class KontakFragment : Fragment() {
 
         _binding = FragmentKontakBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.tvEmail
-        val textView1: TextView = binding.tvFB
-        val textView2: TextView = binding.tvIg
-        val textView3: TextView = binding.tvEmail
-        val textView4: TextView = binding.tvLine
-        val textView5: TextView = binding.tvTelegram
-        val textView6: TextView = binding.tvTwitter
-        val textView7: TextView = binding.tvWa
-        kontakViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-            textView1.text = it
-            textView2.text = it
-            textView3.text = it
-            textView4.text = it
-            textView5.text = it
-            textView6.text = it
-            textView7.text = it
-        }
         return root
     }
 

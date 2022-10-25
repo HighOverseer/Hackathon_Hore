@@ -15,12 +15,17 @@
     <fragment
         android:id="@+id/nav_kontak"
         android:name="com.example.hackathon_hore.ui.kontak.KontakFragment"
-        android:label="Kontak"
+        android:label=""
         tools:layout="@layout/fragment_kontak" />
     <activity
         android:id="@+id/nav_berita"
         android:name="com.example.hackathon_hore.BeritaActivity"
         android:label="activity_berita"
         tools:layout="@layout/activity_berita" />
+    <fragment
+        android:id="@+id/nav_tentang"
+        android:name="com.example.hackathon_hore.ui.home.TentangFragment"
+        android:label=""
+        tools:layout="@layout/fragment_tentang"/>
 
 </navigation>

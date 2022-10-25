@@ -21,6 +21,7 @@
             android:layout_gravity="center_vertical"
             app:navigationIcon="@drawable/hamburger"
             android:background="@color/gold"
+            android:fitsSystemWindows="true"
             app:popupTheme="@style/Theme.Hackathon_Hore.PopupOverlay"
             >
             <ImageView
@@ -36,15 +37,6 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:text="@string/berita_pangan"/>
-            <ImageButton
-                android:id="@+id/btn_searchBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/search"
-                android:background="#DAA21B"
-                />
 
         </androidx.appcompat.widget.Toolbar>
 

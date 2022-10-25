@@ -10,8 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.hackathon_hore.Adapter.KategoriAdapter
+import com.example.hackathon_hore.Adapter.KategoriClickedAdapter
+import com.example.hackathon_hore.Constant.hasilPencarian
 import com.example.hackathon_hore.databinding.FragmentHomeBinding
 import com.example.hackathon_hore.Constant.kategori
+import com.example.hackathon_hore.Constant.terbaru
 
 class HomeFragment : Fragment() {
 
@@ -44,6 +47,11 @@ class HomeFragment : Fragment() {
         binding.rvKategori.adapter = adapter
         binding.rvKategori.layoutManager = GridLayoutManager(requireContext(), 2, GridLayoutManager.HORIZONTAL, false)
         binding.rvKategori.setHasFixedSize(true)
+
+        val adapter2 = KategoriClickedAdapter(terbaru.getCategories())
+        binding.rvTerbaru.adapter = adapter2
+        binding.rvTerbaru.layoutManager = GridLayoutManager(requireContext(), 2, GridLayoutManager.VERTICAL, false)
+        binding.rvTerbaru.setHasFixedSize(true)
 
     }
     override fun onDestroyView() {

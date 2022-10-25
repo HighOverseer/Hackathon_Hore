@@ -31,8 +31,10 @@ class KategoriClickedAdapter(val items:ArrayList<HasilPencarian>):RecyclerView.A
             tvHargaCategoriesGetClicked.text = currentItem.rentangHarga
         }
         holder.itemView.setOnClickListener {
-            if(holder.itemView.context is CategoriesClickedActivity){
+            if(holder.itemView.context is CategoriesClickedActivity ){
                 (holder.itemView.context as CategoriesClickedActivity).onItemGetClicked(currentItem)
+            }else if(holder.itemView.context is MainActivity){
+                (holder.itemView.context as MainActivity).onItemGetClicked(currentItem)
             }
 
         }
