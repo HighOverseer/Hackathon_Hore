@@ -13,11 +13,13 @@ import org.w3c.dom.Text
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
+    private lateinit var auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        auth = FirebaseAuth.getInstance()
 
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val etEmailLog = findViewById<TextView>(R.id.etEmaillog)
@@ -35,10 +37,11 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches())
-                etPasswordLog.error = "Email tidak ada"
-                etPasswordLog.requestFocus()
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                etEmailLog.error = "Email tidak ada"
+                etEmailLog.requestFocus()
                 return@setOnClickListener
+            }
 
             if (pass1.isEmpty() || pass1.length < 8){
                 etPasswordLog.error = "Mohon masukkan password min 8 karakter"
@@ -71,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
                         startActivity(it)
                     }
                 }else{
-                    Toast.makeText(this, "$(it.exception.message)", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
             }
     }
